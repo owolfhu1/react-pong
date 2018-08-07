@@ -9,6 +9,8 @@ const PongBody = props =>
         marginTop : '10px',
         border : 'black solid 1px',
         position : 'relative',
+        background : 'white',
+        borderRadius : '5px',
     }}>
     
         <span style={{

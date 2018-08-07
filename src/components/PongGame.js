@@ -40,11 +40,11 @@ export default class PongGame extends Component {
             if (this.state.right > 0)
                 this.setState({right:this.state.right - incrementBy});
         }
-        if (event.key === 'w') {
+        if (event.key === 'q') {
             if (this.state.left < 300)
                 this.setState({left:this.state.left + incrementBy});
         }
-        if (event.key === 'z') {
+        if (event.key === 'a') {
             if (this.state.left > 0)
                 this.setState({left:this.state.left - incrementBy});
         }
@@ -109,6 +109,8 @@ export default class PongGame extends Component {
             marginTop : '20px',
             border : 'black solid 1px',
             position : 'relative',
+            background : 'lightgray',
+            borderRadius : '5px',
         }} onKeyDown={this.handleKeyPress.bind(this)}>
             <PongBody left={this.state.left} right={this.state.right}
                       x={this.state.x} y={this.state.y}/>
