@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const PongBody = props =>
     
     <div style={{
@@ -17,7 +16,7 @@ const PongBody = props =>
             left : props.x + 2 + 'px',
             bottom : props.y - 4 + 'px'
         }}>
-            o
+            <strong>●</strong>
         </span>
         
         <span style={{
